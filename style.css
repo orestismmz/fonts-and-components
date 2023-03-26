@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+body {
+  font-family: "Noto Sans Syloti Nagri";
+}
+
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-cards-background: rgb(239, 239, 239);
+  --color-lighter: rgb(255, 255, 255);
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+html {
+  font-size: 18px;
+}
+
+h2,
+h3 {
+  color: var(--color-darker);
+}
+
+h1 {
+  font-family: "Staatliches";
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p {
+  color: var(--color-lighter);
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 2rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: var(--color-lighter);
+  border-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-dark);
+}
+
+.header_text p {
+  margin-top: 2rem;
+  color: var(--color-lighter);
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-lighter);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+.intro_text h2 {
+  margin-bottom: 1rem;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
+}
+
+#cards {
+  min-height: 80vh;
+  padding: 2rem 5rem;
+  background-color: var(--color-cards-background);
+}
+#cards p {
+  color: var(--color-dark);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  line-height: 1.2rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+img.card_image {
+  margin: 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card_name {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.card_slogan {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  color: var(--color-darker);
+}
+
+.card_title {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--color-darker);
+}
+
+.card_mail {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.card_mail a {
+  color: var(--color-light);
+  font-size: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.card_button_negative {
+  font-family: "Noto Sans Syloti Nagri";
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.6rem;
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin-left: 1rem;
+}
+.card_button_positive {
+  font-family: "Noto Sans Syloti Nagri";
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border-radius: 0.6rem;
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+.info_text p {
+  color: var(--color-dark);
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+#contact h2 {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-darker);
+}
+
+footer h2,
+footer h3 {
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
